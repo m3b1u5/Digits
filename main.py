@@ -27,8 +27,8 @@ odd_numbers = [i ** 2 for i in range(1, 10) if i % 2 != 0]
 
 
 def main():
-    print(sum_even())
-    print(odd_numbers)
+    print(f"Сумма всех четных чисел от 0 до 100: {sum_even()}")
+    print(f"Квадраты всех нечетных чисел от 1 до 10: {odd_numbers}")
     print(f"Количество введенных чисел: {count_entry()}")
 
 
