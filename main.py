@@ -1,7 +1,5 @@
 # ДЗ: Применение условий
 
-odd_numbers = [i ** 2 for i in range(1, 10) if i % 2 != 0]
-
 
 def sum_even():
     summary = 0
@@ -10,7 +8,7 @@ def sum_even():
     return summary
 
 
-def main():
+def count_entry():
     num = 0
     counter = 0
 
@@ -22,7 +20,16 @@ def main():
         else:
             counter += 1
 
-    print(f"Количество введенных чисел: {counter}")
+    return counter
+
+
+odd_numbers = [i ** 2 for i in range(1, 10) if i % 2 != 0]
+
+
+def main():
+    print(sum_even())
+    print(odd_numbers)
+    print(f"Количество введенных чисел: {count_entry()}")
 
 
 main()
